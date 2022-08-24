@@ -18,14 +18,11 @@ public:
         }
         d=stoi(num2.substr(i + 1,num2.length() - i - 2));
         
-        int real=a*c-b*d;
-        int imag=a*d+b*c;
-        
         string output="";
         
-        output+=to_string(real);
+        output+=to_string(a*c-b*d);
         output+="+";
-        output+=to_string(imag);
+        output+=to_string(a*d+b*c);
         output+="i";
         
         return output;
